@@ -1,10 +1,10 @@
-import SectionTitle from './sectionTitle';
+// import SectionTitle from './animatedTitle';
 import styles from './about.module.css';
 
 const About = () => {
   return (
     <section className='h-screen w-screen bg-gray-500'>
-      <SectionTitle text='Mark Hanley' />
+      {/* <SectionTitle text='About' /> */}
       <p className={styles.paragraph}>
         Mark Hanley is a passionate software developer with a unique blend of
         educational and technical experience. With a foundation in teaching in
