@@ -10,8 +10,14 @@
 
 body {
   color: var(--color-text);
-  background: var(--color-background);
+  /* background: var(--color-background); */
   font-size: 18px;
+  background: linear-gradient(
+    45deg,
+    hsl(272deg 75% 65%) 20%,
+    hsl(193deg 100% 50%) 50%,
+    hsl(162deg 84% 88%) 100%
+  );
 }
 
 .title {

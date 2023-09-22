@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <AnimatedTitle text="MARK HANLEY" replay={true} />
+        <AnimatedTitle text="MARK HANLEY" replay={true} className='text-6xl justify-center p-10'/>
         <About />
         <ProjectGallery />
         <Contact />
