@@ -16,7 +16,7 @@ body {
   color: var(--colour-content);
   background-color: var(--colour-background);
   font-weight: var(--font-weight-content);
-  line-height: var(--font-weight-content);
+  line-height: var(--line-height-content);
 }
 
 h1, h2, h3 {
