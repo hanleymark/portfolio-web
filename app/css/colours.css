@@ -1,0 +1,16 @@
+:root[theme='dark'] {
+  --colour-content: #fff;
+  --colour-background: #2c3645;
+  --colour-heading-small: #ffffd4;
+  --colour-heading-medium: #ffffa4;
+  --colour-heading-large: #ffff74;
+}
+
+:root[theme='light'] {
+  --colour-text: #000;
+  --colour-background: #fff;
+  --colour-title: #000;
+  --colour-heading-small: #000;
+  --colour-heading-medium: #000;
+  --colour-heading-large: #000;
+}

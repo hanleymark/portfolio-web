@@ -1,25 +1,40 @@
+@import './css/normalize.css';
+@import './css/fonts.css';
+@import './css/colours.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-text: #fff;
-  --color-background: #2c3645;
-  --color-title: #ffffd4;
+html {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--color-text);
-  /* background: var(--color-background); */
-  font-size: 18px;
-  background: linear-gradient(
-    45deg,
-    hsl(272deg 75% 65%) 20%,
-    hsl(193deg 100% 50%) 50%,
-    hsl(162deg 84% 88%) 100%
-  );
+  color: var(--colour-content);
+  background-color: var(--colour-background);
+  font-weight: var(--font-weight-content);
+  line-height: var(--font-weight-content);
 }
 
-.title {
-  color: var(--color-title);
+h1, h2, h3 {
+  font-weight: var(--font-weight-heading);
 }
+
+h1 {
+  font-size: var(--font-weight-heading-large);
+  color: var(--color-heading-large);
+}
+
+h2 {
+  font-size: var(--font-weight-heading-medium);
+  color: var(--color-heading-medium);
+}
+
+h3 {
+  font-size: var(--font-weight-heading-small);
+  color: var(--color-heading-small);
+}
+
