@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <AnimatedTitle text="MARK HANLEY" replay={true} />
-        <About />
-        <ProjectGallery />
-        <Contact />
+      <main className='stack-lg  centre'>
+        <AnimatedTitle text={'MARK HANLEY'} replay={true} />
+        <About heading={'About'} />
+        <ProjectGallery heading={'Projects'} />
+        <Contact heading={'Contact'} />
       </main>
     </>
   );

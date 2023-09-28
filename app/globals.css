@@ -20,21 +20,41 @@ body {
 }
 
 h1, h2, h3 {
-  font-weight: var(--font-weight-heading);
+  text-align: center;
 }
 
 h1 {
-  font-size: var(--font-weight-heading-large);
-  color: var(--color-heading-large);
+  font-weight: var(--font-weight-heading-large);
+  font-size: var(--font-size-heading-large);
+  color: var(--colour-heading-large);
 }
 
 h2 {
-  font-size: var(--font-weight-heading-medium);
-  color: var(--color-heading-medium);
+  font-weight: var(--font-weight-heading-medium);
+  font-size: var(--font-size-heading-medium);
+  color: var(--colour-heading-medium);
+  margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: var(--font-weight-heading-small);
-  color: var(--color-heading-small);
+  font-weight: var(--font-weight-heading-medium);
+  font-size: var(--font-size-heading-small);
+  color: var(--colour-heading-small);
+  margin-bottom: 1rem;
 }
 
+.stack-sm > * + * {
+  margin-top: 0.5rem;
+}
+  
+.stack-md > * + * {
+  margin-top: 1rem;
+}
+
+.stack-lg > * + * {
+  margin-top: 2rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 4rem;
+}

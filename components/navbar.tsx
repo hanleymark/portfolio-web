@@ -7,15 +7,15 @@ const Navbar = () => {
   const buttons = [
     {
       content: 'About',
-      link: '#',
+      link: '#about',
     },
     {
       content: 'Projects',
-      link: '#',
+      link: '#gallery',
     },
     {
       content: 'Contact',
-      link: '#',
+      link: '#contact',
     },
   ];
 

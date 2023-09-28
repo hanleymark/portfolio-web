@@ -3,7 +3,7 @@
   --colour-background: #2c3645;
   --colour-heading-small: #ffffd4;
   --colour-heading-medium: #ffffa4;
-  --colour-heading-large: #ffff74;
+  --colour-heading-large: #ffffff;
 }
 
 :root[theme='light'] {

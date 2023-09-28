@@ -12,8 +12,8 @@ interface Props extends HTMLMotionProps<'div'> {
 
 const AnimatedTitle = ({
   text,
-  delay = 0,
-  duration = 0.05,
+  delay = 0.25,
+  duration = 0.1,
   replay,
   ...props
 }: Props) => {
@@ -35,8 +35,8 @@ const AnimatedTitle = ({
       y: 0,
       transition: {
         type: 'spring',
-        damping: 12,
-        stiffness: 200,
+        damping: 5,
+        stiffness: 300,
       },
     },
     hidden: {
@@ -44,8 +44,8 @@ const AnimatedTitle = ({
       y: 20,
       transition: {
         type: 'spring',
-        damping: 12,
-        stiffness: 200,
+        damping: 5,
+        stiffness: 300,
       },
     },
   };
@@ -53,7 +53,7 @@ const AnimatedTitle = ({
   return (
     <motion.h1
       className={styles.title}
-      style={{ display: 'flex', overflow: 'hidden' }}
+      style={{ display: 'flex', overflow: 'visible' }}
       variants={container}
       initial='hidden'
       animate={replay ? 'visible' : 'hidden'}

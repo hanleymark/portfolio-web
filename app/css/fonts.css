@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 :root {
   --font-family-base: 'Josefin Sans', sans-serif;
   --font-size-base: 20px;
-  --font-size-heading-large: 5rem;
-  --font-size-heading-medium: 3rem;
-  --font-size-heading-small: 1.75rem;
+  --font-size-heading-large: 3.5rem;
+  --font-size-heading-medium: 1.8rem;
+  --font-size-heading-small: 1.4rem;
   --font-weight-content: 200;
-  --font-weight-heading: 400;
+  --font-weight-heading-small: 200;
+  --font-weight-heading-medium: 300;
+  --font-weight-heading-large: 400;
   --line-height-content: 1.6rem;
 }

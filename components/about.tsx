@@ -1,11 +1,15 @@
 // import SectionTitle from './animatedTitle';
 import styles from './about.module.css';
 
-const About = () => {
+interface Props {
+  heading?: string;
+}
+
+const About = ({ heading }: Props) => {
   return (
-    <section className='h-screen w-screen bg-gray-500'>
-      {/* <SectionTitle text='About' /> */}
-      <p className={styles.paragraph}>
+    <section id={'about'}>
+      {heading && <h2>{heading}</h2>}
+      <p>
         Mark Hanley is a passionate software developer with a unique blend of
         educational and technical experience. With a foundation in teaching in
         diverse London areas, Mark has an intrinsic understanding of real-world
