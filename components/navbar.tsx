@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className='flex h-auto w-screen justify-center space-x-5 bg-gray-600'>
+      <nav className='flex h-auto w-screen justify-center space-x-5 bg-gray-600 fixed'>
         {buttons.map((button, index) => {
           return (
             <NavButton

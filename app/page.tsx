@@ -10,8 +10,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <AnimatedTitle text={'MARK HANLEY'} replay={true} />
+      <h2>WEB DEVELOPER</h2>
       <main className='stack-lg  centre'>
-        <AnimatedTitle text={'MARK HANLEY'} replay={true} />
         <About heading={'About'} />
         <ProjectGallery heading={'Projects'} />
         <Contact heading={'Contact'} />
