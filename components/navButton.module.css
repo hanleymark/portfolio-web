@@ -1,14 +1,14 @@
 .navButton {
-    @apply text-white bg-gray-600 py-3 px-5 rounded-t-lg;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease-in-out;
+  @apply rounded-t-lg bg-gray-600 px-5 py-3 text-white;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
 
-    &:hover {
-        @apply bg-gray-500;
-    }
+  &:hover {
+    @apply bg-gray-500;
+  }
 
-    &.isActive {
-        @apply bg-red-400;
-        border-bottom: 2px solid rgb(138, 254, 138);
-    }
+  &.isActive {
+    @apply bg-red-400;
+    border-bottom: 2px solid rgb(138, 254, 138);
+  }
 }

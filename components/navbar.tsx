@@ -1,40 +1,39 @@
-"use client"
+'use client';
 
-import React from 'react';
 import { useState } from 'react';
 import NavButton from './navButton';
 
-const Navbar: React.FC = () => {
-const buttons = [
+const Navbar = () => {
+  const buttons = [
     {
-        content: 'About',
-        link: '#',
+      content: 'About',
+      link: '#about',
     },
     {
-        content: 'Projects',
-        link: '#',
+      content: 'Projects',
+      link: '#gallery',
     },
     {
-        content: 'Contact',
-        link: '#',
+      content: 'Contact',
+      link: '#contact',
     },
-];
+  ];
 
-const [activeButton, setActiveButton] = useState<string>(buttons[0].content);
+  const [activeButton, setActiveButton] = useState<string>(buttons[0].content);
 
   return (
     <header>
-      <nav className='w-screen bg-gray-600 h-auto flex justify-center space-x-5'>
+      <nav className='flex h-auto w-screen justify-center space-x-5 bg-gray-600'>
         {buttons.map((button, index) => {
-            return (
-                <NavButton
-                    key={index}
-                    content={button.content}
-                    link={button.link}
-                    isActive={activeButton === button.content}
-                    onClick={() => setActiveButton(button.content)}
-                />
-            );
+          return (
+            <NavButton
+              key={index}
+              content={button.content}
+              link={button.link}
+              isActive={activeButton === button.content}
+              onClick={() => setActiveButton(button.content)}
+            />
+          );
         })}
       </nav>
     </header>
