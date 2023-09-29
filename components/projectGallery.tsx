@@ -8,7 +8,7 @@ const ProjectGallery = ({ heading }: Props) => {
   return (
     <section id={'gallery'}>
       {heading && <h3>{heading}</h3>}
-      <div className='gallery-container'>
+      <div className='flex flex-wrap'>
         <GalleryWindow
           title='A sample project'
           image='./projects/pic.png'
