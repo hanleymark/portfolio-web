@@ -2,6 +2,7 @@
   "extends": ["next", "prettier", "next/core-web-vitals"],
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "indent": ["error", 2]
   }
 }
