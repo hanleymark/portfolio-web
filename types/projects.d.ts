@@ -14,3 +14,7 @@ export interface Tech {
   description: string;
   icon: IconType;
 }
+
+export interface Technologies {
+  [key: string]: Tech;
+}

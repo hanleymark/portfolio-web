@@ -1,5 +1,102 @@
-import { ProjectData } from '@/types/projects';
+import { ProjectData, Tech, Technologies } from '@/types/projects';
+import {
+  SiReact,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiNodedotjs,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiSupabase,
+  SiPostgresql,
+  SiJest,
+  SiCypress,
+  SiGithub,
+  SiGit,
+  SiVisualstudiocode,
+  SiCssmodules,
+  SiStyledcomponents,
+  SiFigma,
+} from 'react-icons/si';
 
+// Set up tech stack icons and descriptions
+const technologies: Technologies = {
+  react: {
+    description: 'React',
+    icon: SiReact,
+  },
+  typescript: {
+    description: 'Typescript',
+    icon: SiTypescript,
+  },
+  javascript: {
+    description: 'Javascript',
+    icon: SiJavascript,
+  },
+  html: {
+    description: 'HTML',
+    icon: SiHtml5,
+  },
+  css: {
+    description: 'CSS',
+    icon: SiCss3,
+  },
+  node: {
+    description: 'Node.js',
+    icon: SiNodedotjs,
+  },
+  next: {
+    description: 'Next.js',
+    icon: SiNextdotjs,
+  },
+  tailwind: {
+    description: 'Tailwind CSS',
+    icon: SiTailwindcss,
+  },
+  supabase: {
+    description: 'Supabase',
+    icon: SiSupabase,
+  },
+  postgresql: {
+    description: 'PostgreSQL',
+    icon: SiPostgresql,
+  },
+  jest: {
+    description: 'Jest',
+    icon: SiJest,
+  },
+  cypress: {
+    description: 'Cypress',
+    icon: SiCypress,
+  },
+  github: {
+    description: 'Github',
+    icon: SiGithub,
+  },
+  git: {
+    description: 'Git',
+    icon: SiGit,
+  },
+  vscode: {
+    description: 'Visual Studio Code',
+    icon: SiVisualstudiocode,
+  },
+  cssmodules: {
+    description: 'CSS Modules',
+    icon: SiCssmodules,
+  },
+  styledcomponents: {
+    description: 'Styled Components',
+    icon: SiStyledcomponents,
+  },
+  figma: {
+    description: 'Figma',
+    icon: SiFigma,
+  },
+};
+
+// Set up project details
 const projects: Array<ProjectData> = [
   {
     title: 'Portfolio project',
@@ -9,7 +106,26 @@ const projects: Array<ProjectData> = [
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
-    techStack: [],
+    techStack: [
+      technologies.react,
+      technologies.typescript,
+      technologies.javascript,
+      technologies.html,
+      technologies.css,
+      technologies.node,
+      technologies.next,
+      technologies.tailwind,
+      technologies.supabase,
+      technologies.postgresql,
+      technologies.jest,
+      technologies.cypress,
+      technologies.github,
+      technologies.git,
+      technologies.vscode,
+      technologies.cssmodules,
+      technologies.styledcomponents,
+      technologies.figma,
+    ],
   },
   {
     title: 'Rent-Shield project',
@@ -19,7 +135,26 @@ const projects: Array<ProjectData> = [
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
-    techStack: [],
+    techStack: [
+      technologies.react,
+      technologies.typescript,
+      technologies.javascript,
+      technologies.html,
+      technologies.css,
+      technologies.node,
+      technologies.next,
+      technologies.tailwind,
+      technologies.supabase,
+      technologies.postgresql,
+      technologies.jest,
+      technologies.cypress,
+      technologies.github,
+      technologies.git,
+      technologies.vscode,
+      technologies.cssmodules,
+      technologies.styledcomponents,
+      technologies.figma,
+    ],
   },
   {
     title: 'Portfolio project',
@@ -29,7 +164,26 @@ const projects: Array<ProjectData> = [
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
-    techStack: [],
+    techStack: [
+      technologies.react,
+      technologies.typescript,
+      technologies.javascript,
+      technologies.html,
+      technologies.css,
+      technologies.node,
+      technologies.next,
+      technologies.tailwind,
+      technologies.supabase,
+      technologies.postgresql,
+      technologies.jest,
+      technologies.cypress,
+      technologies.github,
+      technologies.git,
+      technologies.vscode,
+      technologies.cssmodules,
+      technologies.styledcomponents,
+      technologies.figma,
+    ],
   },
   {
     title: 'Portfolio project',
@@ -39,6 +193,25 @@ const projects: Array<ProjectData> = [
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
-    techStack: [],
+    techStack: [
+      technologies.react,
+      technologies.typescript,
+      technologies.javascript,
+      technologies.html,
+      technologies.css,
+      technologies.node,
+      technologies.next,
+      technologies.tailwind,
+      technologies.supabase,
+      technologies.postgresql,
+      technologies.jest,
+      technologies.cypress,
+      technologies.github,
+      technologies.git,
+      technologies.vscode,
+      technologies.cssmodules,
+      technologies.styledcomponents,
+      technologies.figma,
+    ],
   },
 ];
