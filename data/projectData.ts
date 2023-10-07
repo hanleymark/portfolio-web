@@ -1,4 +1,4 @@
-import { ProjectData, Tech, Technologies } from '@/types/projects';
+import { ProjectData, Technologies } from '@/types/projects';
 import {
   SiReact,
   SiTypescript,
@@ -97,12 +97,12 @@ const technologies: Technologies = {
 };
 
 // Set up project details
-const projects: Array<ProjectData> = [
+export const projects: Array<ProjectData> = [
   {
     title: 'Portfolio project',
     description:
       'A simple portfolio of some of the projects I have worked in my web development journey.',
-    imageUrl: 'portfolio.gif',
+    imageUrl: 'portfolio-application.png',
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
@@ -131,7 +131,7 @@ const projects: Array<ProjectData> = [
     title: 'Rent-Shield project',
     description:
       'Rental property search full-stack web application, built for product owner as part of ',
-    imageUrl: 'portfolio.gif',
+    imageUrl: 'portfolio-application.png',
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
@@ -160,7 +160,7 @@ const projects: Array<ProjectData> = [
     title: 'Portfolio project',
     description:
       'A simple portfolio of some of the projects I have worked in my web development journey.',
-    imageUrl: 'portfolio.gif',
+    imageUrl: 'portfolio-application.png',
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
@@ -189,7 +189,7 @@ const projects: Array<ProjectData> = [
     title: 'Portfolio project',
     description:
       'A simple portfolio of some of the projects I have worked in my web development journey.',
-    imageUrl: 'portfolio.gif',
+    imageUrl: 'portfolio-application.png',
     imageAlt: 'Animated image of portfolio website in action',
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',

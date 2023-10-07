@@ -1,13 +1,7 @@
 import React from 'react';
 import cntl from 'cntl';
-
-interface Props {
-  title: string;
-  image: string;
-  link: string;
-  alt: string;
-  description: string;
-}
+import { ProjectData } from '@/types/projects';
+import Image from 'next/image';
 
 const windowTW = cntl`
   w-full
@@ -23,13 +17,36 @@ const windowTW = cntl`
   flex
 `;
 
-const GalleryWindow = (props: Props) => {
+const GalleryWindow = ({
+  title,
+  description,
+  imageUrl,
+  imageAlt,
+  repoLink,
+  deploymentLink,
+  techStack,
+}: ProjectData) => {
   return (
     <div className={windowTW}>
       <div className='w-max flex-row flex-nowrap gap-1'>
-        <div className='w-max basis-1/6'>Left</div>
-        <div className='w-max basis-5/6 bg-white'>Right</div>
+        <div className='w-max basis-1/6'>OOO</div>
+        <div className='w-max basis-5/6 bg-white'>{title}</div>
       </div>
+      <div className='h-full w-full'>
+        <Image
+          className='h-full w-full object-cover'
+          src={imageUrl}
+          alt={imageAlt}
+          layout='responsive'
+          width={4}
+          height={3}
+        />
+      </div>
+      <ul>
+        {techStack.map((tech, index) => (
+          <tech.icon key={tech.description}/>
+        ))}
+      </ul>
     </div>
   );
 };
