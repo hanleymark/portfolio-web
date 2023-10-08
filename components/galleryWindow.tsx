@@ -37,7 +37,7 @@ const GalleryWindow = ({
         {techStack.map((tech, index) => (
           <span
             key={index}
-            className='w-fit h-fit rounded-sm bg-white p-1 text-xl shadow-lg rounded-lg'
+            className='w-fit h-fit bg-white p-1 text-xl shadow-lg rounded-lg first:mt-2'
           >
             <tech.icon />
           </span>

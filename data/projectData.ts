@@ -165,7 +165,6 @@ export const projects: Array<ProjectData> = [
     repoLink: 'https://github.com/hanleymark/portfolio-web',
     deploymentLink: '',
     techStack: [
-      technologies.react,
       technologies.typescript,
       technologies.javascript,
       technologies.html,
