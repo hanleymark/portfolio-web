@@ -1,21 +1,6 @@
 import React from 'react';
-import cntl from 'cntl';
 import { ProjectData } from '@/types/projects';
 import Image from 'next/image';
-
-const windowTW = cntl`
-  w-full
-  aspect-4/3
-  h-auto
-  rounded-md
-  bg-slate-300
-  shadow-md
-  md:w-full
-  lg:w-1/2
-  xl:w-1/3
-  2xl:w-1/4
-  flex
-`;
 
 const GalleryWindow = ({
   title,
@@ -27,14 +12,20 @@ const GalleryWindow = ({
   techStack,
 }: ProjectData) => {
   return (
-    <div className={windowTW}>
-      <div className='w-max flex-row flex-nowrap gap-1'>
-        <div className='w-max basis-1/6'>OOO</div>
-        <div className='w-max basis-5/6 bg-white'>{title}</div>
+    <div className='aspect-4/3 h-auto w-full rounded-md bg-slate-200 p-1 shadow-md'>
+      <div className='flex flex-row flex-nowrap'>
+        <div className='m-1 basis-1/6'>
+          <span className='text-2xl text-red-400'>{'\u25CF'}</span>
+          <span className='text-2xl text-orange-200'>{'\u25CF'}</span>
+          <span className='text-2xl text-green-300'>{'\u25CF'}</span>
+        </div>
+        <div className='m-1 flex basis-5/6 items-center justify-center bg-white font-normal text-gray-600 shadow-inner'>
+          <span>{title}</span>
+        </div>
       </div>
       <div className='h-full w-full'>
         <Image
-          className='h-full w-full object-cover'
+          className='h-full w-full object-cover py-1'
           src={imageUrl}
           alt={imageAlt}
           layout='responsive'
@@ -42,11 +33,16 @@ const GalleryWindow = ({
           height={3}
         />
       </div>
-      <ul>
+      <div className='flex flex-wrap justify-center items-center space-y-2 space-x-2 text-indigo-800'>
         {techStack.map((tech, index) => (
-          <tech.icon key={tech.description}/>
+          <span
+            key={index}
+            className='w-fit h-fit rounded-sm bg-white p-1 text-xl shadow-lg rounded-lg'
+          >
+            <tech.icon />
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

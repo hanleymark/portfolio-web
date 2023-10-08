@@ -58,3 +58,7 @@ h3 {
 .stack-xl > * + * {
   margin-top: 4rem;
 }
+
+.horiz-stack-sm > * + * {
+  margin-left: 0.5rem;
+}

@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <div className='h-10'></div>
       <AnimatedTitle text={'MARK HANLEY'} replay={true} />
       <h2>WEB DEVELOPER</h2>
       <main className='stack-lg  centre'>
