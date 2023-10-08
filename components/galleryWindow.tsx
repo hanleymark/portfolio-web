@@ -33,11 +33,11 @@ const GalleryWindow = ({
           height={3}
         />
       </div>
-      <div className='flex flex-wrap justify-center items-center space-y-2 space-x-2 text-indigo-800'>
+      <div className='flex flex-wrap items-center justify-center space-x-2 space-y-2 text-indigo-800'>
         {techStack.map((tech, index) => (
           <span
             key={index}
-            className='w-fit h-fit bg-white p-1 text-xl shadow-lg rounded-lg first:mt-2'
+            className='h-fit w-fit transform rounded-lg bg-white p-1 text-xl shadow-lg transition-transform duration-300 first:mt-2 hover:scale-125'
           >
             <tech.icon />
           </span>

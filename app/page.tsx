@@ -11,14 +11,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className='h-10'></div>
-      <AnimatedTitle text={'MARK HANLEY'} replay={true} />
-      <h2>WEB DEVELOPER</h2>
-      <main className='stack-lg  centre'>
-        <About heading='About' />
-        <ProjectGallery heading='Projects' projects={projects} />
-        <Contact heading='Contact' />
-      </main>
+      <div className='mx-auto max-w-screen-xl px-2 sm:px-4 lg:px-6'>
+        <div className='h-10'></div>
+        <AnimatedTitle text={'MARK HANLEY'} replay={true} />
+        <h2>WEB DEVELOPER</h2>
+        <main className='stack-lg text-justify'>
+          <About heading='About' />
+          <ProjectGallery heading='Projects' projects={projects} />
+          <Contact heading='Contact' />
+        </main>
+      </div>
     </>
   );
 }
