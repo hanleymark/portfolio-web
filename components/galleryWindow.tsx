@@ -33,7 +33,7 @@ const GalleryWindow = ({
           height={3}
         />
       </div>
-      <div className='flex flex-wrap items-center justify-center space-x-2 space-y-2 text-indigo-800'>
+      <div className='flex flex-wrap items-center justify-center space-x-2 space-y-2 pb-1 text-indigo-800'>
         {techStack.map((tech, index) => (
           <span
             key={index}

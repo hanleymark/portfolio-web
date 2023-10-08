@@ -9,7 +9,7 @@ import { projects } from '@/data/projectData';
 
 export default function Home() {
   return (
-    <>
+    <div id={'about'}>
       <Navbar />
       <div className='mx-auto max-w-screen-xl px-2 sm:px-4 lg:px-6'>
         <div className='h-10'></div>
@@ -21,6 +21,6 @@ export default function Home() {
           <Contact heading='Contact' />
         </main>
       </div>
-    </>
+    </div>
   );
 }
