@@ -1,6 +1,7 @@
 import React from 'react';
 import { ProjectData } from '@/types/projects';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 const GalleryWindow = ({
   title,
@@ -11,6 +12,20 @@ const GalleryWindow = ({
   deploymentLink,
   techStack,
 }: ProjectData) => {
+  const [hoveredTech, setHoveredTech] = useState<string>('\u00A0');
+
+  useEffect(() => {
+    const techStack = document.querySelectorAll('.tech-stack');
+    techStack.forEach((tech) => {
+      tech.addEventListener('mouseover', () => {
+        setHoveredTech(tech.id);
+      });
+      tech.addEventListener('mouseout', () => {
+        setHoveredTech('\u00A0');
+      });
+    });
+  }, []);
+
   return (
     <div className='aspect-4/3 h-auto w-full rounded-md bg-slate-200 p-1 shadow-md'>
       <div className='flex flex-row flex-nowrap'>
@@ -35,14 +50,15 @@ const GalleryWindow = ({
       </div>
       <div className='flex flex-wrap items-center justify-center space-x-2 space-y-2 pb-1 text-indigo-800'>
         {techStack.map((tech, index) => (
-          <span
+          <div
             key={index}
-            className='h-fit w-fit transform rounded-lg bg-white p-1 text-xl shadow-lg transition-transform duration-300 first:mt-2 hover:scale-125'
+            className='group z-0 h-fit w-fit transform rounded-lg bg-white p-1 text-xl shadow-lg transition-transform duration-300  first:mt-2 hover:scale-125'
           >
-            <tech.icon />
-          </span>
+            <tech.icon className='tech-stack' id={tech.description}/>
+          </div>
         ))}
       </div>
+      <div className='tech-stack-display text-gray-600 font-normal text-center'>{hoveredTech}</div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import styles from './about.module.css';
 
-
 interface Props {
   heading?: string;
 }
