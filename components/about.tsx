@@ -1,4 +1,4 @@
-// import SectionTitle from './animatedTitle';
+import React, { useRef } from 'react';
 import styles from './about.module.css';
 
 interface Props {
@@ -7,8 +7,9 @@ interface Props {
 
 const About = ({ heading }: Props) => {
   return (
-    <section id={'about'}>
+    <section>
       {heading && <h3>{heading}</h3>}
+
       <p>
         Mark Hanley is a passionate software developer with a unique blend of
         educational and technical experience. With a foundation in teaching in

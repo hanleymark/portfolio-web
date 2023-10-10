@@ -1,4 +1,4 @@
-:root[theme='dark'] {
+:root[data-theme='dark'] {
   --colour-content: #fff;
   --colour-background: #2c3645;
   --colour-heading-small: #ffffd4;
@@ -6,7 +6,7 @@
   --colour-heading-large: #ffffff;
 }
 
-:root[theme='light'] {
+:root[data-theme='light'] {
   --colour-text: #000;
   --colour-background: #fff;
   --colour-title: #000;

@@ -1,21 +1,30 @@
+import { ProjectData } from '@/types/projects';
 import GalleryWindow from './galleryWindow';
 
 interface Props {
-  heading?: string;
+  heading: string;
+  projects: Array<ProjectData>;
 }
 
-const ProjectGallery = ({ heading }: Props) => {
+const ProjectGallery = ({ heading, projects }: Props) => {
   return (
     <section id={'gallery'}>
       {heading && <h3>{heading}</h3>}
-      <div className='flex flex-wrap'>
-        <GalleryWindow
-          title='A sample project'
-          image='./projects/pic.png'
-          link='#'
-          alt='A project image'
-          description='This is a description'
-        />
+      <div className='grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3'>
+        {projects.map((project: ProjectData) => {
+          return (
+            <GalleryWindow
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              imageUrl={`/images/${project.imageUrl}`}
+              imageAlt={project.imageAlt}
+              repoLink={project.repoLink}
+              deploymentLink={project.deploymentLink}
+              techStack={project.techStack}
+            />
+          );
+        })}
       </div>
     </section>
   );
