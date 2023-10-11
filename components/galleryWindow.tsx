@@ -41,10 +41,10 @@ const GalleryWindow = ({
           <div
             key={`${title}-${tech.description}`}
             className='group z-0 h-fit w-fit transform rounded-lg bg-white p-1 text-xl shadow-lg transition-transform duration-300 first:mt-2 hover:scale-125'
-            // onMouseEnter={() => setHoveredTech(tech.description)}
-            // onMouseLeave={() => setHoveredTech('\u00A0')}
             onPointerEnter={() => setHoveredTech(tech.description)}
             onPointerLeave={() => setHoveredTech('\u00A0')}
+            onClick={() => setHoveredTech(tech.description)}
+            onMouseLeave={() => setHoveredTech('\u00A0')}
           >
             <tech.icon className='tech-stack' id={tech.description} />
           </div>

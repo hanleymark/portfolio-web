@@ -1,6 +1,6 @@
 'use client';
 
-import Navbar from '@/components/navbar';
+import NavBar from '@/components/navbar';
 import About from '@/components/about';
 import Contact from '@/components/contact';
 import ProjectGallery from '@/components/projectGallery';
@@ -12,7 +12,7 @@ import LaptopAnimation from '@/components/laptopAnimation';
 export default function Home() {
   return (
     <div id={'about'}>
-      <Navbar />
+      <NavBar />
       <div className='mx-auto max-w-screen-xl px-2 sm:px-4 lg:px-6'>
         <div className='h-10'></div>
         <AnimatedTitle text={'MARK HANLEY'} replay={true} />
