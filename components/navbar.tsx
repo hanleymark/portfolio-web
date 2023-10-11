@@ -73,7 +73,7 @@ const NavBar = () => {
 
   return (
     <header className='w-full'>
-      <nav className='fixed px-8  z-10 flex h-auto h-max w-screen justify-end space-x-3 bg-gray-600 md:justify-center'>
+      <nav className='fixed z-10  flex h-auto h-max w-screen justify-end space-x-3 bg-gray-600 px-8 md:justify-center'>
         <MobileNav open={open} setOpen={setOpen} />
         {navButtonData.map((button) => {
           return (
@@ -86,7 +86,7 @@ const NavBar = () => {
             />
           );
         })}
-        <div className='HELLO flex justify-center items-center'>
+        <div className='HELLO flex items-center justify-center'>
           <div
             className='z-20 flex h-7 w-7 cursor-pointer flex-col items-center justify-center space-y-2 md:hidden'
             onClick={() => {
