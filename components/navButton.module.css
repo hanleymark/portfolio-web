@@ -1,5 +1,5 @@
 .navButton {
-  @apply rounded-t-lg bg-gray-600 px-5 py-1 text-white;
+  @apply rounded-t-lg bg-gray-600 px-5 h-full text-white;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease-in-out;
 

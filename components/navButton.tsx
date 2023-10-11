@@ -8,7 +8,7 @@ type NavButtonProps = {
   onClick: () => void;
 };
 
-const NavButton = ({ content, link, isActive, onClick }: NavButtonProps) => {
+const NavButton = ({ content, link, isActive, isMobile, onClick }: NavButtonProps) => {
   return (
     <Link
       href={link}

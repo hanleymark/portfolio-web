@@ -73,20 +73,21 @@ const NavBar = () => {
 
   return (
     <header className='w-full'>
-      <nav className='fixed z-10  flex h-auto h-max w-screen justify-end space-x-3 bg-gray-600 px-8 md:justify-center'>
+      <nav className='fixed z-10 flex h-8 w-screen items-end border-b-2 border-transparent justify-end space-x-3 bg-gray-600 px-8 md:justify-center'>
         <MobileNav open={open} setOpen={setOpen} />
         {navButtonData.map((button) => {
           return (
-            <NavButton
-              key={`nav-${button.content}`}
-              content={button.content}
-              link={button.link}
-              isActive={activeButton === button.content}
-              onClick={() => setActiveButton(button.content)}
-            />
+            <div className='hidden md:block' key={`nav-${button.content}`}>
+              <NavButton
+                content={button.content}
+                link={button.link}
+                isActive={activeButton === button.content}
+                onClick={() => setActiveButton(button.content)}
+              />
+            </div>
           );
         })}
-        <div className='HELLO flex items-center justify-center'>
+        <div className='flex items-center justify-center'>
           <div
             className='z-20 flex h-7 w-7 cursor-pointer flex-col items-center justify-center space-y-2 md:hidden'
             onClick={() => {

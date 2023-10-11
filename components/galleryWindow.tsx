@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef } from 'react';
 import { ProjectData } from '@/types/projects';
 import Image from 'next/image';
