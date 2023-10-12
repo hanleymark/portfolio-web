@@ -18,7 +18,7 @@ const AnimatedTitle = ({
   ...props
 }: Props) => {
   const letters = Array.from(text);
-  const fontSize = `${(100 / letters.length).toFixed(2)}vw`;
+  const fontSize = `${(120 / letters.length).toFixed(2)}vw`;
   const MAX_FONT_SIZE = '4rem';
 
   const container: Variants = {
