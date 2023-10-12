@@ -18,7 +18,6 @@ import {
   SiCssmodules,
   SiStyledcomponents,
   SiFigma,
-  SiAuth0,
 } from 'react-icons/si';
 
 // Set up tech stack icons and descriptions
@@ -95,10 +94,6 @@ const technologies: Technologies = {
     description: 'Figma',
     icon: SiFigma,
   },
-  auth0: {
-    description: 'Auth0',
-    icon: SiAuth0,
-  },
 };
 
 // Set up project details
@@ -143,7 +138,6 @@ export const projects: Array<ProjectData> = [
       technologies.tailwind,
       technologies.supabase,
       technologies.postgresql,
-      technologies.auth0,
       technologies.jest,
       technologies.cypress,
       technologies.github,
@@ -169,7 +163,6 @@ export const projects: Array<ProjectData> = [
       technologies.next,
       technologies.supabase,
       technologies.postgresql,
-      technologies.auth0,
       technologies.github,
       technologies.git,
       technologies.vscode,

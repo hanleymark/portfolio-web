@@ -1,9 +1,9 @@
 'use client';
-import React, { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const LaptopAnimation = () => {
   const ref = useRef(null);
-  React.useEffect(() => {
+  useEffect(() => {
     import('@lottiefiles/lottie-player');
   });
   return (

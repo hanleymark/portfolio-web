@@ -19,13 +19,15 @@ body {
   line-height: var(--line-height-content);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
 h1 {
   font-weight: var(--font-weight-heading-large);
-  font-size: var(--font-size-heading-large);
+  /* font-size: var(--font-size-heading-large); */
   color: var(--colour-heading-large);
 }
 
@@ -46,7 +48,7 @@ h3 {
 .stack-sm > * + * {
   margin-top: 0.5rem;
 }
-  
+
 .stack-md > * + * {
   margin-top: 1rem;
 }
