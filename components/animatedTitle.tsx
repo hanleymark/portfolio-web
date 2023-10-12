@@ -18,8 +18,8 @@ const AnimatedTitle = ({
   ...props
 }: Props) => {
   const letters = Array.from(text);
-  const fontSize = `${(120 / letters.length).toFixed(2)}vw`;
-  const MAX_FONT_SIZE = '4rem';
+  const titleFontSize = `${(120 / letters.length).toFixed(2)}vw`;
+  const MAX_TITLE_FONT_SIZE = '4rem';
 
   const container: Variants = {
     hidden: {
@@ -54,7 +54,7 @@ const AnimatedTitle = ({
   return (
     <motion.h1
       className={`${styles.title} flex overflow-visible`}
-      style={{ fontSize: `min(${fontSize}, ${MAX_FONT_SIZE})` }}
+      style={{ fontSize: `min(${titleFontSize}, ${MAX_TITLE_FONT_SIZE})` }}
       variants={container}
       initial='hidden'
       animate={replay ? 'visible' : 'hidden'}

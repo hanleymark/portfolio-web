@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import NavButton from './navButton';
+import AnimatedTitle from './animatedTitle';
 
 const navButtonData = [
   {
@@ -22,43 +23,44 @@ const navButtonData = [
   },
 ];
 
-const MobileNav = ({ open, setOpen }) => {
+interface MobileNavProps {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  activeButton: string;
+  setActiveButton: (button: string) => void;
+}
+
+const MobileNav = ({
+  open,
+  setOpen,
+  activeButton,
+  setActiveButton,
+}: MobileNavProps) => {
   return (
     <div
       className={`absolute left-0 top-0 h-screen w-screen transform bg-inherit ${
         open ? '-translate-x-0' : '-translate-x-full'
       } drop-shadow-md filter transition-transform duration-300 ease-in-out `}
     >
-      <div className='flex h-20 items-center justify-center bg-white drop-shadow-md filter'>
-        {' '}
-        {/*logo container*/}
-        <a className='text-xl font-semibold' href='/'>
-          LOGO
-        </a>
+      <div className='flex h-20 items-center justify-center bg-inherit drop-shadow-md filter mb-4'>
+        <p className='text-[2rem]'>MARK HANLEY</p>
       </div>
-      <div className='ml-4 flex flex-col'>
-        <a
-          className='my-4 text-xl font-medium'
-          href='/about'
-          onClick={() =>
-            setTimeout(() => {
-              setOpen(!open);
-            }, 100)
-          }
-        >
-          About
-        </a>
-        <a
-          className='my-4 text-xl font-normal'
-          href='/contact'
-          onClick={() =>
-            setTimeout(() => {
-              setOpen(!open);
-            }, 100)
-          }
-        >
-          Contact
-        </a>
+      <div className='ml-2 flex flex-col'>
+        {navButtonData.map((button) => {
+          return (
+            <NavButton
+              key={`nav-${button.content}`}
+              content={button.content}
+              link={button.link}
+              isActive={activeButton === button.content}
+              isMobile={true}
+              onClick={() => {
+                setActiveButton(button.content);
+                setOpen(false);
+              }}
+            />
+          );
+        })}
       </div>
     </div>
   );
@@ -73,15 +75,24 @@ const NavBar = () => {
 
   return (
     <header className='w-full'>
-      <nav className='fixed z-10 flex h-8 w-screen items-end border-b-2 border-transparent justify-end space-x-3 bg-gray-600 px-8 md:justify-center'>
-        <MobileNav open={open} setOpen={setOpen} />
+      <nav className='fixed z-10 flex h-8 w-screen items-end justify-end space-x-2 border-b-2 border-transparent bg-gray-600 px-4 md:justify-center'>
+        <MobileNav
+          open={open}
+          setOpen={setOpen}
+          activeButton={activeButton}
+          setActiveButton={setActiveButton}
+        />
         {navButtonData.map((button) => {
           return (
-            <div className='hidden md:block' key={`nav-${button.content}`}>
+            <div
+              className='hidden md:block'
+              key={`mobile-nav-${button.content}`}
+            >
               <NavButton
                 content={button.content}
                 link={button.link}
                 isActive={activeButton === button.content}
+                isMobile={false}
                 onClick={() => setActiveButton(button.content)}
               />
             </div>
@@ -94,19 +105,19 @@ const NavBar = () => {
               setOpen(!open);
             }}
           >
-            {/* hamburger button */}
+            {/* Burger menu with animation */}
             <span
-              className={`h-[2px] w-full transform rounded-lg bg-black transition duration-300 ease-in-out ${
+              className={`h-[2px] w-full transform rounded-lg bg-white transition duration-300 ease-in-out ${
                 open ? 'translate-y-2.5 rotate-45' : ''
               }`}
             />
             <span
-              className={`h-[2px] w-full rounded-lg bg-black transition-all duration-300 ease-in-out ${
+              className={`h-[2px] w-full rounded-lg bg-white transition-all duration-300 ease-in-out ${
                 open ? ' translate-x-full opacity-0' : 'opacity-1 translate-x-0'
               }`}
             />
             <span
-              className={`h-[2px] w-full transform rounded-lg bg-black transition duration-300 ease-in-out ${
+              className={`h-[2px] w-full transform rounded-lg bg-white transition duration-300 ease-in-out ${
                 open ? '-translate-y-2.5 -rotate-45' : ''
               }`}
             />

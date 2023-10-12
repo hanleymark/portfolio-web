@@ -5,14 +5,21 @@ type NavButtonProps = {
   content: string;
   link: string;
   isActive: boolean;
+  isMobile: boolean;
   onClick: () => void;
 };
 
-const NavButton = ({ content, link, isActive, isMobile, onClick }: NavButtonProps) => {
+const NavButton = ({
+  content,
+  link,
+  isActive,
+  isMobile,
+  onClick,
+}: NavButtonProps) => {
   return (
     <Link
       href={link}
-      className={`${styles.navButton} ${isActive ? styles.isActive : ''}`}
+      className={`${isMobile ? styles.navButtonMobile : styles.navButton} ${isActive ? styles.isActive : ''}`}
       onClick={onClick}
     >
       {content}
