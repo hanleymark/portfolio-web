@@ -42,7 +42,7 @@ const MobileNav = ({
         open ? '-translate-x-0' : '-translate-x-full'
       } drop-shadow-md filter transition-transform duration-300 ease-in-out `}
     >
-      <div className='flex h-20 items-center justify-center bg-inherit drop-shadow-md filter mb-4'>
+      <div className='mb-4 flex h-20 items-center justify-center bg-inherit drop-shadow-md filter'>
         <p className='text-[2rem]'>MARK HANLEY</p>
       </div>
       <div className='ml-2 flex flex-col'>

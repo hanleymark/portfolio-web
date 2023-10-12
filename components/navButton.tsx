@@ -19,7 +19,9 @@ const NavButton = ({
   return (
     <Link
       href={link}
-      className={`${isMobile ? styles.navButtonMobile : styles.navButton} ${isActive ? styles.isActive : ''}`}
+      className={`${isMobile ? styles.navButtonMobile : styles.navButton} ${
+        isActive ? styles.isActive : ''
+      }`}
       onClick={onClick}
     >
       {content}
