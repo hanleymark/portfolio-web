@@ -1,10 +1,10 @@
 'use client';
-import About from '@/components/about';
-import Contact from '@/components/contact';
-import ProjectGallery from '@/components/projectGallery';
-import AnimatedTitle from '@/components/animatedTitle';
+import About from '@/components/About';
+import Contact from '@/components/Contact';
+import ProjectGallery from '@/components/ProjectGallery';
+import AnimatedTitle from '@/components/AnimatedTitle';
+import MHAnimation from '@/components/MHAnimation';
 import { projects } from '@/data/projectData';
-import MHAnimation from '@/components/mhAnimation';
 
 export default function Home() {
   return (

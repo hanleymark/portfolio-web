@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './animatedTitle.module.css';
+import styles from './AnimatedTitle.module.css';
 import { motion, Variants, HTMLMotionProps } from 'framer-motion';
 
 interface Props extends HTMLMotionProps<'div'> {

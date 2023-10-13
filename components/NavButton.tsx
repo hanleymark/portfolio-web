@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './navButton.module.css';
+import styles from './NavButton.module.css';
 
 type NavButtonProps = {
   content: string;

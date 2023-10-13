@@ -1,5 +1,5 @@
 import { ProjectData } from '@/types/projects';
-import GalleryWindow from './galleryWindow';
+import GalleryWindow from './GalleryWindow';
 
 interface Props {
   heading: string;

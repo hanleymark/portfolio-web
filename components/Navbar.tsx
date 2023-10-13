@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import NavButton from './navButton';
-import AnimatedTitle from './animatedTitle';
+import NavButton from './NavButton';
+import AnimatedTitle from './AnimatedTitle';
 
 const navButtonData = [
   {
