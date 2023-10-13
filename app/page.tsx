@@ -4,7 +4,7 @@ import Contact from '@/components/contact';
 import ProjectGallery from '@/components/projectGallery';
 import AnimatedTitle from '@/components/animatedTitle';
 import { projects } from '@/data/projectData';
-import LaptopAnimation from '@/components/laptopAnimation';
+import MHAnimation from '@/components/mhAnimation';
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <div className='h-10'></div>
         <AnimatedTitle text={'MARK HANLEY'} replay={true} />
         <h2>WEB DEVELOPER</h2>
-        <LaptopAnimation />
+        <MHAnimation />
         <main className='stack-lg text-justify'>
           <About heading='About' />
           <ProjectGallery heading='Projects' projects={projects} />
