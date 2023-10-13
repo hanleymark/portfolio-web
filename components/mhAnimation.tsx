@@ -14,7 +14,7 @@ const MHAnimation = () => {
         autoplay
         mode='normal'
         src='/animations/mhAnimation.json'
-        speed='0.3'
+        speed='0.1'
         aria-label='laptop-animation'
       ></lottie-player>
     </div>
