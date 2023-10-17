@@ -38,7 +38,7 @@ const MobileNav = ({
 }: MobileNavProps) => {
   return (
     <div
-      className={`absolute left-0 top-0 h-screen w-screen transform bg-inherit w-full ${
+      className={`absolute left-0 top-0 h-screen w-full w-screen transform bg-inherit ${
         open ? '-translate-x-0' : '-translate-x-full'
       } drop-shadow-md filter transition-transform duration-300 ease-in-out `}
     >
