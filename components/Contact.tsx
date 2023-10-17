@@ -10,16 +10,22 @@ const Contact = ({ heading }: ContactProps) => {
   return (
     <section id={'contact'}>
       {heading && <h3>{heading}</h3>}
-      {contactData.map((contact) => (
-        <ContactButton
-          key={contact.text}
-          href={contact.href}
-          target={contact.target}
-          rel={contact.rel}
-          text={contact.text}
-          Icon={contact.Icon}
-        />
-      ))}
+      <div className='m-auto flex w-11/12 flex-wrap justify-center gap-5 p-3'>
+        {contactData.map((contact) => (
+          <div
+            key={contact.text}
+            className='stack-lg w-full rounded-lg bg-slate-700 shadow-md p-5 md:w-[40%] lg:w-[28%] xl:w-[20%]'
+          >
+            <ContactButton
+              href={contact.href}
+              target={contact.target}
+              rel={contact.rel}
+              text={contact.text}
+              Icon={contact.Icon}
+            />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

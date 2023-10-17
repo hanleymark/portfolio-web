@@ -6,4 +6,5 @@ export interface ContactData {
   rel?: string;
   text: string;
   Icon: IconType;
+  className?: string;
 }
