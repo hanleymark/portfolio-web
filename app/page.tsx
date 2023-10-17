@@ -18,6 +18,7 @@ export default function Home() {
           <About heading='About' />
           <ProjectGallery heading='Projects' projects={projects} />
           <Contact heading='Contact' />
+          <div className='h-10 text-center'>{'\u00A9 Mark Hanley 2023'}</div>
         </main>
       </div>
     </div>
