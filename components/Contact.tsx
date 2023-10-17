@@ -8,7 +8,7 @@ interface ContactProps {
 
 const Contact = ({ heading }: ContactProps) => {
   return (
-    <section id={'contact'}>
+    <section>
       {heading && <h3>{heading}</h3>}
       <div className='m-auto flex w-11/12 flex-wrap justify-center gap-5 p-3 items-center'>
         {contactData.map((contact) => (

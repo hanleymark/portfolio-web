@@ -11,7 +11,7 @@ const navButtonData = [
   },
   {
     content: 'Projects',
-    link: '#gallery',
+    link: '#projects',
   },
   {
     content: 'Contact',
