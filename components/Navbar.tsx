@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import NavButton from './navButton';
-import AnimatedTitle from './animatedTitle';
+import NavButton from './NavButton';
+import AnimatedTitle from './AnimatedTitle';
 
 const navButtonData = [
   {
@@ -11,7 +11,7 @@ const navButtonData = [
   },
   {
     content: 'Projects',
-    link: '#gallery',
+    link: '#projects',
   },
   {
     content: 'Contact',
@@ -38,7 +38,7 @@ const MobileNav = ({
 }: MobileNavProps) => {
   return (
     <div
-      className={`absolute left-0 top-0 h-screen w-screen transform bg-inherit ${
+      className={`absolute left-0 top-0 h-screen w-full w-screen transform bg-inherit ${
         open ? '-translate-x-0' : '-translate-x-full'
       } drop-shadow-md filter transition-transform duration-300 ease-in-out `}
     >
