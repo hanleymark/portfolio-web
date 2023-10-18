@@ -7,15 +7,15 @@ import AnimatedTitle from './AnimatedTitle';
 const navButtonData = [
   {
     content: 'About',
-    link: '#about',
+    link: '/#about',
   },
   {
     content: 'Projects',
-    link: '#projects',
+    link: '/#projects',
   },
   {
     content: 'Contact',
-    link: '#contact',
+    link: '/#contact',
   },
   {
     content: 'Blog',

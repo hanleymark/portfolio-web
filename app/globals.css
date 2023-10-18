@@ -27,7 +27,7 @@ h3 {
 
 h1 {
   font-weight: var(--font-weight-heading-large);
-  /* font-size: var(--font-size-heading-large); */
+  font-size: var(--font-size-heading-large);
   color: var(--colour-heading-large);
 }
 
