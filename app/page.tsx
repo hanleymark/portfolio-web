@@ -10,7 +10,7 @@ import { projects } from '@/data/projectData';
 export default function Home() {
   return (
     <>
-      <ScrollAnchor id='about' offset={'2rem'} />
+      <ScrollAnchor id='about' offset={'0px'} />
       <div className='mx-auto max-w-screen-xl px-2 sm:px-4 lg:px-6'>
         <div className='h-10'></div>
         <AnimatedTitle text={'MARK HANLEY'} replay={true} />
